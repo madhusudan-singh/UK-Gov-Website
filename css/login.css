@@ -1,0 +1,227 @@
+@media screen and (max-width: 900px)
+{
+    /* LOGIN BOX WINDOW */
+    .login-window
+    {
+    	display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+    	z-index: 1; /* Sit on top */
+    	left: 0;
+    	top: 0;
+    	width: 100%; /* Full width */
+    	height: 100%; /* Full height */
+    	overflow: auto; /* Enable scroll if needed */
+    	background-color: rgb(0,0,0); /* Fallback color */
+    	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    	padding-top: 150px;
+      }
+
+      /* Modal Content/Box */
+      .login-window-content {
+    	background-color: #fefefe;
+    	margin: 5px auto; /* 15% from the top and centered */
+    	border: 2px solid #888;
+    	width: 90%; /* Could be more or less, depending on screen size */
+      }
+      .login-input-field
+      {
+        width: 70%;
+    	padding: 12px 20px;
+    	margin:0;
+    	display: inline-block;
+    	box-sizing: border-box;
+      }
+      .login-button
+      {
+        background-color:#1E90FF;
+    	color: white;
+    	font-size: 16px;
+        padding: 12px 16px;
+        width: 49%;
+    	border: none;
+    	cursor: pointer;
+    	font-weight: bold;
+      }
+      .login-cancel-button
+      {
+        background-color:#f44336;
+    	color: white;
+    	font-size: 16px;
+        padding: 12px 16px;
+        width: 49%;
+    	border: none;
+    	cursor: pointer;
+    	font-weight: bold;
+      }
+      /* The Close Button */
+      .close-login-window {
+        /* Position it in the top right corner outside of the modal */
+    	position: absolute;
+    	right: 4.5vw;
+        top: 30.5vw;
+        /* box-shadow: 0px 3px 16px  black; */
+        display: inline-block;
+        border-radius: 10px;
+        color: #000;
+        height: 10vw;
+        width: 9vw;
+        text-align: center;
+    	font-size: 35px;
+    	font-weight: bold;
+      }
+
+      /* Close button on hover */
+      .close-login-window:hover,
+      .close-login-window:focus {
+    	color: red;
+    	cursor: pointer;
+      }
+
+      /* Add Zoom Animation */
+      .login-window-animate {
+    	-webkit-animation: animatezoom 0.6s;
+    	animation: animatezoom 0.6s
+      }
+
+      @-webkit-keyframes animatezoom {
+    	from {-webkit-transform: scale(0)}
+    	to {-webkit-transform: scale(1)}
+      }
+
+      @keyframes animatezoom {
+    	from {transform: scale(0)}
+    	to {transform: scale(1)}
+      }
+
+      .container {
+    	padding: 20px;
+      }
+      .forgot-password-link
+      {
+          display: block;
+          text-align: center;
+          color: rgb(80, 106, 221);
+          text-decoration: none;
+      }
+      .forgot-password-link:hover
+      {
+        display: block;
+        text-align: center;
+        color: red;
+        text-decoration: none;
+      }
+
+}
+@media screen and (min-width: 900px)
+{
+  /* LOGIN BOX WINDOW */
+.login-window
+{
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	padding-top: 150px;
+  }
+  
+  /* Modal Content/Box */
+  .login-window-content {
+	background-color: #fefefe;
+	margin: 5px auto; /* 15% from the top and centered */
+	border: 2px solid #888;
+	width: 30%; /* Could be more or less, depending on screen size */
+  }
+  .login-input-field
+  {
+    width: 70%;
+	padding: 12px 20px;
+	margin:0;
+	display: inline-block;
+	box-sizing: border-box;
+  }
+  .login-button
+  {
+    background-color:#1E90FF;
+	color: white;
+	font-size: 16px;
+    padding: 12px 16px;
+    width: 49%;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+  }
+  .login-cancel-button
+  {
+    background-color:#f44336;
+	color: white;
+	font-size: 16px;
+    padding: 12px 16px;
+    width: 49%;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+  }
+  /* The Close Button */
+  .close-login-window {
+	/* Position it in the top right corner outside of the modal */
+	position: absolute;
+	right: 31vw;
+    top: 9vw;
+    box-shadow: 0px 3px 16px  black;
+    display: inline-block;
+    border-radius: 10px;
+    color: #000;
+    width: 2.5vw;
+    text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close-login-window:hover,
+  .close-login-window:focus {
+	color: red;
+	cursor: pointer;
+  }
+    
+  /* Add Zoom Animation */
+  .login-window-animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)}
+	to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+	from {transform: scale(0)}
+	to {transform: scale(1)}
+  }
+
+  .container {
+	padding: 20px;
+  }
+  .forgot-password-link
+  {
+      display: block;
+      text-align: center;
+      color: rgb(80, 106, 221);
+      text-decoration: none;
+  }
+  .forgot-password-link:hover
+  {
+    display: block;
+    text-align: center;
+    color: red;
+    text-decoration: none;
+  }
+  /* LOGIN BOX WINDOW ENDS */
+}

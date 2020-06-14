@@ -1,0 +1,295 @@
+body
+{
+    margin: 0;
+}
+@media screen and (max-width: 900px)
+{
+.nav-bar
+    {
+        background-color: rgb(80, 106, 221);
+        border: 1px solid black;
+        display: fixed;
+    }
+    .main-logo
+    {
+        margin-left: 3vw;
+        margin-top: 0.5vw;
+        height: 10vw;
+        width: 10vw;
+    }
+    .main-logo-2
+    {
+        margin-left: 3vw;
+        margin-top: 0.5vw;
+        height: 10vw;
+        width: 10vw;
+    }
+    .navbar-text
+    {
+        display: inline-block;
+        font-size: 3vw;
+        margin: 0;
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+        width: 75%;
+        /* margin-left: 2vw; */
+        /* left: 5vw; */
+        position: absolute;
+        top: 4vw;
+    } 
+    .hamburger-menu
+    {
+        display: inline-block;
+        float: right;
+        background-color: rgba(240, 248, 255, 0.123);
+        box-shadow: 1px 1px 10px  black;
+        border-radius: 3px;
+        margin-top: 2vw;
+        margin-right: 4vw;
+        padding: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        color: aliceblue;
+    }
+    .navbar-list
+    {
+        /* display: inline-block; */
+        /* position: relative; */
+        display: none;
+        height: 0vw;
+        overflow: hidden;
+        margin-left: 17vw;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        bottom: 7vw;
+        right: 3vw;
+        border-bottom: 2px solid rgb(80, 106, 221);
+        animation-timing-function: linear;
+        animation-name: navbarShowIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+     } 
+     @keyframes navbarShowIn
+     {
+         from{height: 0vw}
+         to{height: 27vw}
+     }
+    .navbar-list-2
+    {
+        /* display: inline-block; */
+        /* position: relative; */
+        display: none;
+        height: 0vw;
+        margin-left: 17vw;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        bottom: 7vw;
+        right: 3vw;
+        border-bottom: 2px solid rgb(80, 106, 221);
+        animation-timing-function: linear;
+        animation-name: navbarShowIn;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    .navbar-list-items
+    {
+        /* display: none; */
+        text-align: right;
+        color: aliceblue;
+        list-style: none;
+        font-size: 3vw;
+        font-weight: bolder;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        margin-left: 0.5vw;
+        margin-right: 3vw;
+        font-family: Verdana;
+    }
+    .navbar-link
+    {
+        color: rgb(255, 245, 245);
+        text-decoration: none;
+        font-size: 2vwvw;
+    }
+    .navbar-link:hover
+    {
+        background-color: rgb(80, 106, 221);
+        color: white;
+    }
+    .navbar-login-button
+    {
+        background-color: white;
+        color: rgb(80, 106, 221);
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 1px;
+        font-family: Verdana;
+        font-weight: bolder;
+    }
+    .navbar-login-button:hover
+    {
+        
+        background-color: rgb(80, 106, 221);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 1px;
+        font-family: Verdana;
+        font-weight: bolder;
+    }
+}
+@media screen and (min-width: 900px)
+{
+.nav-bar
+    {
+        background-color: rgb(80, 106, 221);
+        border: 1px solid black;
+        display: fixed;
+    }
+    .main-logo
+    {
+        margin-left: 3vw;
+        /* margin-top: 0.5vw; */
+        height: 5vw;
+        width: 5vw;
+    }
+    .main-logo-2
+    {
+        margin-left: 3vw;
+        /* margin-top: 0.5vw; */
+        height: 10vw;
+        width: 10vw;
+    }
+    .navbar-text
+    {
+        display: inline-block;
+        font-size: x-large;
+        margin: 0;
+        text-align: center;
+        font-weight: bolder;
+        color: white;
+        margin-left: 2vw;
+        position: absolute;
+        top: 2vw;
+    }
+    .navbar-text-part1
+    {
+        display: inline-block;
+        margin: 0;
+        font-size: larger;
+        font-weight: bolder;
+        position: absolute;
+        top: 0.8vw;
+        left: 9vw;
+    }
+    .navbar-hr
+    {
+        display: inline-block;
+        width: 10%;
+        position: absolute;
+        top: 1.9vw;
+        left: 13vw;
+    }
+    .navbar-text-part2
+    {
+        display: inline-block;
+        margin: 0;
+        font-size: larger;
+        font-weight: bolder;
+        position: absolute;
+        top: 2.8vw;
+        left: 10.5vw;
+    } 
+    .hamburger-menu
+    {
+        display: inline-block;
+        float: right;
+        background-color: rgba(240, 248, 255, 0.123);
+        box-shadow: 1px 1px 10px  black;
+        border-radius: 3px;
+        margin-top: 1vw;
+        margin-right: 4vw;
+        padding: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        color: aliceblue;
+    }
+    .navbar-list
+    {
+        /* display: inline-block; */
+        /* position: relative; */
+        display: none;
+        height: 0vw;
+        overflow: hidden;
+        margin-left: 17vw;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        bottom: 7vw;
+        right: 3vw;
+        border-bottom: 2px solid rgb(80, 106, 221);
+        animation-timing-function: linear;
+        animation-name: navbarShowIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+     } 
+     @keyframes navbarShowIn
+     {
+         from{height: 0vw}
+         to{height: 19vw}
+     }
+    .navbar-list-items
+    {
+        /* display: none; */
+        text-align: right;
+        color: aliceblue;
+        list-style: none;
+        font-size: 2vw;
+        font-weight: bolder;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        margin-left: 0.5vw;
+        margin-right: 3vw;
+        font-family: Verdana;
+    }
+    .navbar-link
+    {
+        color: rgb(255, 245, 245);
+        text-decoration: none;
+        font-size: 2vwvw;
+    }
+    .navbar-link:hover
+    {
+        background-color: rgb(80, 106, 221);
+        color: white;
+    }
+    .navbar-login-button
+    {
+        background-color: white;
+        color: rgb(80, 106, 221);
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 1px;
+        font-family: Verdana;
+        font-weight: bolder;
+        width: 10vw;
+        height: 2.5vw;
+    }
+    .navbar-login-button:hover
+    {
+        
+        background-color: rgb(80, 106, 221);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 1px;
+        font-family: Verdana;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,105 @@
+@media screen and (min-width:900px)
+{
+    .midsection
+{
+
+}
+.input-form
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.heading
+{
+    
+}
+
+.input-labels
+{
+    display: inline-block;
+    width: 20%;
+    font-size: 1.5vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+}
+.input-fields
+{
+    
+
+}
+.submit-button
+{
+    background-color: rgb(112, 231, 158);
+    color: white;
+    display: block;
+    width: 10vw;
+    height: 2vw;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.submit-button:hover
+{
+    background-color:white;
+    color: rgb(112, 231, 158);
+    display: block;
+    width: 10vw;
+    height: 2vw;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+}
+@media screen and (max-width: 900px)
+{
+    .midsection
+{
+
+}
+.input-form
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.heading
+{
+    
+}
+
+.input-labels
+{
+    display: inline-block;
+    width: 40%;
+    font-size: 4vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+}
+.input-fields
+{
+    
+
+}
+.submit-button
+{
+    background-color: rgb(112, 231, 158);
+    color: white;
+    display: block;
+    width: 20vw;
+    height: 9vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 2vw;
+}
+.submit-button:hover
+{
+    background-color:white;
+    color: rgb(112, 231, 158);
+    display: block;
+    width: 10vw;
+    height: 2vw;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+}

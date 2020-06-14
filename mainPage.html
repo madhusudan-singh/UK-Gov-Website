@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Of Uttrakhand</title>
+    <link rel = "icon" href = "images/india.png" type = "image/x-icon"> 
+    <link href="css/index.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/footer.css" type="text/css">
+    <script src="https://kit.fontawesome.com/7fc0c7085f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="nav-bar">
+        <img src="images/uk.png" alt="uk-logo" class="main-logo" id="mainLogo">
+        <!-- HAMURGER MENU ICON -->
+        <div class="hamburger-menu">
+            <a  class="icon" onclick="hamburgerMenuShowFunction()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <ul class="navbar-list" id="navbarList">
+            <li class="navbar-list-items"><a href="/index.html" class="navbar-link">HOME</a></li>
+            <!-- <li class="navbar-list-items"><a href="" class="navbar-link">ABOUT</a></li> -->
+            <li class="navbar-list-items" ><a target="_blank" href="/department.html" class="navbar-link">DEPARTMENTS</a></li>
+            <li class="navbar-list-items" ><a target="_blank" href="https://uk.gov.in/pages/display/1144-directorates" class="navbar-link">DIRECTORATES</a></li>
+            <li class="navbar-list-items" ><a target="_blank" href="https://uk.gov.in/pages/display/1145-organisations--boards" class="navbar-link">ORGANIZATION</a></li>
+            <li class="navbar-list-items" ><a target="_blank" href="/department.html" class="navbar-link">REPORTS</a></li>
+            <li class="navbar-list-items" ><button class="navbar-login-button" onclick="document.getElementById('loginWindow').style.display='block'">LOGIN</button></li>
+            <!-- <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">CONTACT US</a></li> -->
+            <!-- <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">FEEDBACK</a></li> -->
+        </ul>
+    </div>
+
+
+    <div id="loginWindow" class="login-window">
+        <span onclick="document.getElementById('loginWindow').style.display='none'" class="close-login-window" title="Close Modal">
+            &times;
+        </span>
+      
+        <!-- LOGIN WINDOW -->
+        <form class="login-window-content login-window-animate" action="/login" method="POST">
+          
+          <div class="container">
+            <br><br>
+            <label for="uname"><b>Username: </b></label>
+            <input type="text" placeholder="Enter Username" name="uname" class="login-input-field" required>
+            <br><br>
+            <label for="psw"><b>Password: </b></label>
+            <input type="password" placeholder="Enter Password" name="psw" class="login-input-field" required>
+            <br><br>
+            <button type="submit" class="login-button"> Login </button>
+            <button type="button" class="login-cancel-button" onclick="document.getElementById('loginWindow').style.display='none'" >Cancel</button>
+            <br><br>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+              <a href="#" class="forgot-password-link"><<< FORGOT PASSWORD >>></a>
+          </div>
+        </form>
+    </div>
+
+
+    <div class="front-page">
+        <div >
+            <!-- Main Frontpage heading -->
+            <h1 class="main-heading-english"> Directorate of Economics & Statistics</h1>
+            <hr class="heading-hr">
+            <h1 class="main-heading-hindi">Government of Uttarakhand  </h1>
+            <!-- | उत्तराखण्ड सरकार -->
+            <!-- scrolling-images -->
+            <!-- <img src="/images/DEHRADUN.jpg" alt="FRI_DEHRADUN" class="scroll-images"> -->
+            <h1 class="individual-state-name"><a href="www.google.com" class="individual-state-link">    DEHRADUN</a></h1>
+            <h1 class="individual-state-name-2"><a href="www.google.com" class="individual-state-link-2">DEHRADUN</a></h1>
+        </div>
+
+        <!-- <div class="login-front-page">
+            <h1 class="login-title">Login...</h1>
+            <hr class="login-hr">
+            <div>
+                <p class="login-fields">USERNAME:</p>
+                <input type="text" class="login-input-fields" placeholder="Username">
+            </div>
+            <div>
+                <p class="login-fields">PASSWORD:</p>
+                <input type="text" class="login-input-fields" placeholder="Password">
+            </div>
+            <div class="login-button-div">
+                <button class="login-button">Login</button>
+                <button class="login-button">Sign up</button>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- MIDSECTION -->
+    
+    <div class="midsection">
+        
+        <div class="district">
+		
+			<div class="ministers-section">					
+						<div class="governor">
+								<a href="http://www.governoruk.gov.in/" target="_blank">
+								<img class="longimg" src="images/Gov.jpg" width="100px" height="104px" alt="Uttarakhand Governer"></a>
+								<p class="txt-name" tabindex="0"><a class="ministers-link" href="http://www.governoruk.gov.in/" target="_blank">Governor<br> Smt. Baby Rani Maurya</a></p>
+						</div>
+						<div class="cheif-minister">
+								<a href="https://cm.uk.gov.in/" target="_blank">
+								<img class="longimg" src="images/CM.jpg" alt="Uttarakhand CM" width="100px" height="104px" tabindex="0"></a>
+								<p class="txt-name" tabindex="0"><a class="ministers-link" href="http://cm.uk.gov.in/" target="_blank">Chief Minister <br>Shri Trivendra Singh Rawat</a></p>		
+						</div>
+						</div>
+						
+            <h3 class="card-title" style="width: 40%">Districts </h3>
+            <div class="district-map">
+                <img src="images/map.jpg" alt="Map" title="Map" usemap="#Map" />
+            </div>
+
+            <map name="Map" id="Map">
+                <area  title="Uttarkashi (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                        return false;" shape="poly" coords="116,28,108,37,106,46,108,49,89,42,83,49,70,54,63,61,57,65,49,60,43,56,35,57,37,50,31,44,33,39,30,34,23,34,21,30,31,23,34,22,52,15,79,18,94,25,90,16,97,4" href="http://uttarkashi.nic.in/" alt="Uttarkashi" />
+                <area title="Dehradun (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="10,70,27,84,42,102,50,94,48,89,48,83,43,80,40,76,45,73,29,70,30,59,36,52,29,47,30,38,19,37,19,57,21,64"  href="http://dehradun.nic.in/" alt="Dehradun" />
+                <area title="Haridwar (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="28,87,16,105,20,119,31,118,34,125,35,128,52,115,47,104,40,102" href="http://haridwar.nic.in/" alt="Haridwar" />
+                <area title="Tehri (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="97,49,92,44,84,53,75,53,67,64,62,64,59,67,36,59,32,65,46,70,45,79,52,79,51,89,56,91,67,97,73,82,89,82,87,74,87,61,87,59" href="http://tehri.nic.in/" alt="Tehri" />
+                <area title="Rudraprayag (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="95,86,88,83,89,59,96,50,107,51,111,57,101,79"  href="http://rudraprayag.nic.in/" alt="rudraprayag" />
+                <area title="Chamoli (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="136,33,157,47,152,52,153,60,149,80,137,86,139,95,123,99,116,104,108,105,99,85,107,67,114,57,108,47,114,31,127,36" href="http://chamoli.nic.in/" alt="chamoli" />
+                <area title="Pauri (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="86,140,65,128,61,119,53,114,46,104,53,93,62,96,65,100,72,85,86,84,94,86,99,87,105,102,95,107,98,116,96,127" href="http://pauri.nic.in/" alt="pauri" />
+                <area title="Bageshwar (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="153,81,157,91,156,97,158,104,151,109,151,114,145,113,142,118,138,121,137,113,127,111,122,103,134,101,141,100,139,89,144,84" href="http://bageshwar.nic.in/" alt="bageshwar" />
+                <area title="Pithoragarh (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;"shape="poly" coords="211,87,204,87,183,109,173,116,176,123,165,138,146,118,153,113,161,107,159,99,156,86,150,81,155,55,160,46,163,59,184,67" href="http://pithoragarh.nic.in/" alt="pithoragarh" />
+                <area title="Almora (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="146,121,154,134,142,138,133,132,122,134,114,127,104,133,97,131,101,122,99,108,106,105,119,106,129,112" href="http://almora.nic.in/" alt="almora" />
+                <area title="Nainital (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="94,133,84,143,99,149,104,149,111,156,129,164,142,167,149,163,144,158,145,155,141,149,144,147,138,140,133,137,123,135,115,131" href="http://nainital.nic.in/" alt="nainital" />
+                <area title="Champawat (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="165,140,172,149,168,157,159,169,159,163,150,161,147,157,144,150,145,145,144,140,158,135" href="http://champawat.nic.in/" alt=" champawat " />
+                <area title="Udham S. Nagar (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="83,144,80,147,84,158,88,161,101,167,116,175,130,180,142,176,142,180,151,185,157,181,158,167,157,163,143,166,122,164,108,154,102,150" href="http://usnagar.nic.in/" alt="usnagar" />
+            </map>
+        </div>  
+        <!-- <div class="district">
+            <div class="ministers-section">
+                <div class="governor">
+                    <img src="/images/governor.jpg" alt="Governor">
+                    <a href="https://www.governoruk.gov.in/" class="ministers-link"><p >Governor</p></a>
+                    <a href="https://www.governoruk.gov.in/" class="ministers-link"><p >Smt. Baby Rani Maurya</p></a>
+                </div>
+                <div class="cheif-minister">
+                    <img src="/images/cheifminister.jpg" alt="cheif minister">
+                    <a href="https://cm.uk.gov.in/" class="ministers-link"><p>Cheif Minister</p></a>
+                    <a href="https://cm.uk.gov.in/" class="ministers-link"><p class="cheif-minister-name">Shri Trivendra Singh Rawat</p></a>
+                </div>
+            
+            <h3 class="card-title" style="width: 40%">Districts </h3>
+            <div class="district-map">
+                <img src="images/map.jpg" alt="Map" title="Map" usemap="#Map" />
+            </div>
+
+            <map name="Map" id="Map">
+                <area  title="Uttarkashi (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                        return false;" shape="poly" coords="116,28,108,37,106,46,108,49,89,42,83,49,70,54,63,61,57,65,49,60,43,56,35,57,37,50,31,44,33,39,30,34,23,34,21,30,31,23,34,22,52,15,79,18,94,25,90,16,97,4" href="http://uttarkashi.nic.in/" alt="Uttarkashi" />
+                <area title="Dehradun (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="10,70,27,84,42,102,50,94,48,89,48,83,43,80,40,76,45,73,29,70,30,59,36,52,29,47,30,38,19,37,19,57,21,64"  href="http://dehradun.nic.in/" alt="Dehradun" />
+                <area title="Haridwar (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="28,87,16,105,20,119,31,118,34,125,35,128,52,115,47,104,40,102" href="http://haridwar.nic.in/" alt="Haridwar" />
+                <area title="Tehri (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="97,49,92,44,84,53,75,53,67,64,62,64,59,67,36,59,32,65,46,70,45,79,52,79,51,89,56,91,67,97,73,82,89,82,87,74,87,61,87,59" href="http://tehri.nic.in/" alt="Tehri" />
+                <area title="Rudraprayag (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="95,86,88,83,89,59,96,50,107,51,111,57,101,79"  href="http://rudraprayag.nic.in/" alt="rudraprayag" />
+                <area title="Chamoli (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="136,33,157,47,152,52,153,60,149,80,137,86,139,95,123,99,116,104,108,105,99,85,107,67,114,57,108,47,114,31,127,36" href="http://chamoli.nic.in/" alt="chamoli" />
+                <area title="Pauri (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="86,140,65,128,61,119,53,114,46,104,53,93,62,96,65,100,72,85,86,84,94,86,99,87,105,102,95,107,98,116,96,127" href="http://pauri.nic.in/" alt="pauri" />
+                <area title="Bageshwar (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="153,81,157,91,156,97,158,104,151,109,151,114,145,113,142,118,138,121,137,113,127,111,122,103,134,101,141,100,139,89,144,84" href="http://bageshwar.nic.in/" alt="bageshwar" />
+                <area title="Pithoragarh (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;"shape="poly" coords="211,87,204,87,183,109,173,116,176,123,165,138,146,118,153,113,161,107,159,99,156,86,150,81,155,55,160,46,163,59,184,67" href="http://pithoragarh.nic.in/" alt="pithoragarh" />
+                <area title="Almora (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="146,121,154,134,142,138,133,132,122,134,114,127,104,133,97,131,101,122,99,108,106,105,119,106,129,112" href="http://almora.nic.in/" alt="almora" />
+                <area title="Nainital (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="94,133,84,143,99,149,104,149,111,156,129,164,142,167,149,163,144,158,145,155,141,149,144,147,138,140,133,137,123,135,115,131" href="http://nainital.nic.in/" alt="nainital" />
+                <area title="Champawat (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="165,140,172,149,168,157,159,169,159,163,150,161,147,157,144,150,145,145,144,140,158,135" href="http://champawat.nic.in/" alt=" champawat " />
+                <area title="Udham S. Nagar (Opens in a new window)" onclick="openChild(this.href, 'win', '0');
+                return false;" shape="poly" coords="83,144,80,147,84,158,88,161,101,167,116,175,130,180,142,176,142,180,151,185,157,181,158,167,157,163,143,166,122,164,108,154,102,150" href="http://usnagar.nic.in/" alt="usnagar" />
+            </map>
+            </div>
+        </div>   -->
+        
+        <div class="main-intro">
+            <h3>
+                <p class="main-intro-heading">Directorate of Economics & Statistics </p>
+            </h3>
+            <ul class="main-intro-points">
+                <li class="main-intro-list">To collect, compile and process the statistical data and disseminate in the form of important statistical publications pertaining to the economy of the State.</li>
+                <li class="main-intro-list">To conduct socio-economic studies, surveys and census related to various socio-economic aspects vital to the development in the State.</li>
+                <li class="main-intro-list">To compile and prepare estimates of State Domestic Product and related aggregates.</li>
+                <li class="main-intro-list">To assist the State Government in the formulation of economic policies by furnishing technical note on current economic situation in the State.</li>
+                <li class="main-intro-list">To participate on matching sample basis, in the yearly survey rounds of National Sample Survey Organization.</li>
+                <li class="main-intro-list">To co-ordinate the statistical activities of various State Government departments with a view to suggest improvements in the existing methods of data collection.</li>
+                <li class="main-intro-list">To provide statistical information to various Government Departments, offices, committees, working groups, commission’s set-up by the government and the research institutions.</li>
+                <!-- <li class="main-intro-list">To organize regular training programmes for various statistical personnel working at different levels.</li> -->
+                <!-- <li class="main-intro-list">To undertake or assist in undertaking special and ad-hoc studies or surveys as desired by the State Government and the Government of India.</li> -->
+                <!-- <li class="main-intro-list">To provide technical guidance to District Statistical Officers, is coordinating statistical activities at district level with reference to statistical activities, various census and surveys.</li> -->
+            </ul>
+        </div>
+
+        <div class="news-section" >
+            <h3 class="card-title-news" >News and Announcements</h3>
+                <marquee id="externalmarquee4" class="scrolling-feed" scrolldelay="50" onmouseout="this.scrollAmount=1" onmouseover="this.scrollAmount=0" scrollamount="8" direction="up">
+                    <div class="ne">
+                    <ul class="news-list-section">
+                        <li class="individual-news">News: <strong><a href="" target="_self"> Corona infection has been found in two youths who returned home from Mumbai and Gurugram in Udham Singh Nagar. One of them has been kept in the isolation ward in Rudrapur District Hospital and the other in LD Bhatt Hospital Kashipur. </a></strong>
+                            <p style=" line-height:2em"></p>
+                            <br>
+                        </li>
+                        <li class="individual-news">News: <strong><a href="" target="_self">Significantly, on Friday, four cases of corona infection were reported in the state on Friday. One of these patients is from Adarsh ​​Colony on Ring Road in Dehradun. </a></strong>
+                            <p style=" line-height:2em"></p>
+                            <br>
+                        </li>
+                        <li class="individual-news">News: <strong><a href="" target="_self">So far 84 cases of corona have been reported in the state. These include two people undergoing treatment in Uttarakhand after being found infected in Delhi and Punjab. </a></strong>
+                            <p style=" line-height:2em"></p>
+                            <br>
+                        </li>
+                    </ul>
+                </marquee>
+        </div>
+        
+
+    </div>
+    <div class="district-info">
+        <p class="district-info-heading">Uttrakhand at a glance...</p>
+        <div class="district-info-individual-feild ">         <div class="district-icons area"><i class="far fa-map"></i></div></i><p>Area: 53,483 Sq.km</p></div>
+        <div class="district-info-individual-feild ">   <div class="district-icons population"><i class="fas fa-user-friends"></i></div><p>Population: 100.86 Lakh</p></div>
+        <div class="district-info-individual-feild ">      <div class="district-icons capital"><i class="fas fa-map-pin"></i></div><p>Capital: Dehradun(Temporary)</p></div>
+        <div class="district-info-individual-feild ">             <div class="district-icons area"><i class="far fa-map"></i></div><p>District: 13</p></div>
+        <div class="district-info-individual-feild latitude">     <div class="district-icons capital"><i class="fas fa-map-pin"></i></div></i><p>Latitude: 28°43' N to 31°27' N</p></div>
+    </div>
+    <!-- FOOTER -->
+    <!-- <div class="footer">
+        <p class="copyright-claim">Copyright © Team UPES Dehradun</p>
+        <div class="counter">
+            <p>TOTAL VISITS :- 000000</p>
+            <p>Since 19-05-2020</p> 
+        </div>
+    </div>
+         -->
+    <footer class="footer-distributed" style="margin-top: 0;">
+ 
+        <div class="footer-left">   
+        
+            <h3>About</h3>
+            <h3><span style="color:#506AE4">Uttarakhand</span></h3>
+            <p class="footer-links">
+                <a href="#">HOME</a> | <a href="#">DEPARTMENT</a> | <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">© Government of Uttarakhand, All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                  <p><span>Dehardun,Uttarakhand (248007)
+                     </p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 123-4567-890</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p ><a style="color:#506AE4" href="mailto:support@uk.gov.in">support@uk.gov.in</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About this Website</span>
+                Contents published in this website are managed and maintained by the team of UPES. For any queries please refer to the developer in the contact us tab.</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var images = ["DEHRADUN.jpg","TULIP.jpg", "HARIDWAR.jpg","NANITAL.jpg","TEHRI.png","UTTARKASHI.jpeg"];
+        var places = ["DEHRADUN","TULIPGARDEN","HARIDWAR","NANITAL","TEHRI","UTTARKASHI"];
+        $(function () 
+        {
+            var i = 0;
+            $(".front-page").css("background-image", "url(images/" + images[i] + ")");
+            setInterval(function () 
+            {
+                i++;
+                if (i == images.length) {
+                    i = 0;
+                }
+                //Changes the background picture
+                $(".front-page").fadeOut("slow", function () 
+                {
+                    $(this).css("background-image", "url(images/" + images[i] + ")");
+                    $(this).fadeIn("slow");
+                });
+                //Changes the state name on the main page
+                $(".individual-state-link").fadeOut("slow",function()
+                {
+                    $(this).text(function(){return(places[i])})
+                    $(this).fadeIn("slow");
+                })
+                $(".individual-state-link-2").fadeOut("slow",function()
+                {
+                    $(this).text(function(){return(places[i])})
+                    $(this).fadeIn("slow");
+                })
+            }, 6000);
+        });
+        window.onscroll = function() {myFunction()};
+
+        function myFunction() {
+          if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+              console.log(document.body.scrollTop)
+            document.getElementById("mainLogo").classList.add("main-logo-2");
+            document.getElementById("navbarList").classList.add("navbar-list-2");
+          } else {
+            document.getElementById("mainLogo").classList.remove("main-logo-2");
+            document.getElementById("navbarList").classList.remove("navbar-list-2");
+          }
+        }
+        function hamburgerMenuShowFunction() {
+            console.log("called")
+            var x =document.getElementById("navbarList");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+    </script>
+ 
+</body>
+</html>

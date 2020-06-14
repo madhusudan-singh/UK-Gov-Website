@@ -83,9 +83,17 @@ h2 {
   border-radius: 0 8px 8px 0;
 }
 
+.lbl{
+    padding: 12px 24px;
+    display: flex;
+}
+
+.selected{
+  padding: 12px 24px;
+}
+
 .select-box .option,
 .selected {
-  padding: 12px 24px;
   cursor: pointer;
 }
 

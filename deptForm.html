@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Entry Form</title>
+    <link rel="icon" href="images/india.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/agricultureForms.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
+    <script src="https://kit.fontawesome.com/7fc0c7085f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="nav-bar">
+        <img src="images/uk.png" alt="uk-logo" class="main-logo" id="mainLogo">
+        <p class="navbar-text">Directorate of Economics & Statistics | Uttarakhand</p>
+        <!-- HAMURGER MENU ICON -->
+        <div class="hamburger-menu" onclick="hamburgerMenuShowFunction()">
+            <a class="icon">
+                <i class="fas fa-bars"></i>
+            </a>
+        </div>
+        <ul class="navbar-list" id="navbarList">
+            <li class="navbar-list-items"><a href="/index.html" class="navbar-link">HOME</a></li>
+            <li class="navbar-list-items"><a target="_blank" href="/department.html" class="navbar-link">DASHBOARD</a>
+            </li>
+            <li class="navbar-list-items"><a target="_blank" href="/mainPage.html" class="navbar-link">DES
+                    UTTRAKHAND</a></li>
+        </ul>
+    </div>
+
+    <!-- MIDSECTION -->
+    <div class="midsection">
+        <h1 class="midsection-main-heading">Department Dashboard</h1>
+        <hr>
+
+        <div class="container">
+            <h2></h2>
+
+            <div class="select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="Dep01" name="category" />
+                        <label class="lbl" for="Dep01">Agriculture</label>
+                    </div>
+                </div>
+
+                <div class="selected">
+                    Select Department
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER SECTION -->
+    <!-- <form action="/" id="" class="input-form">
+        <h1 class="heading"></h1>
+
+        <label for="loc_category" class="input-labels"><b>Location Category:</b></label>
+        <input type="number"  name="loc_category" class="input-fields" readonly>
+        
+        <label for="loc_id" class="input-labels"><b>Location Id:</b></label>
+        <input type="text"  name="loc_id" class="input-fields">
+
+        <label for="year" class="input-labels"><b>Year:</b></label>
+        <input type="number"  name="year" class="input-fields" >
+
+        <label for="district" class="input-labels"><b>District:</b></label>
+        <input type="text"  name="district" class="input-fields" />
+
+        <label for="" class="input-labels"><b>:</b></label>
+        <input type="text"  name="" class="input-fields" >
+
+        <button type="submit" class="submit-button">Submit</button>
+
+    </form> -->
+    <footer class="footer-distributed" style="margin-top: 0;">
+
+        <div class="footer-left">
+
+            <h3>About</h3>
+            <h3><span style="color:#506AE4">Uttarakhand</span></h3>
+            <p class="footer-links">
+                <a href="#">HOME</a> | <a href="#">DEPARTMENT</a> | <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">© Government of Uttarakhand, All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Dehardun,Uttarakhand (248007)
+                </p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 123-4567-890</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a style="color:#506AE4" href="mailto:support@uk.gov.in">support@uk.gov.in</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About this Website</span>
+                Contents published in this website are managed and maintained by the team of UPES. For any queries
+                please refer to the developer in the contact us tab.</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const selected = document.querySelector(".selected");
+        const optionsContainer = document.querySelector(".options-container");
+
+        const optionsList = document.querySelectorAll(".option");
+
+        selected.addEventListener("click", () => {
+            optionsContainer.classList.toggle("active");
+        });
+
+        optionsList.forEach(o => {
+            o.addEventListener("click", () => {
+                selected.innerHTML = o.querySelector("label").innerHTML;
+                optionsContainer.classList.remove("active");
+            });
+        });
+
+        function hamburgerMenuShowFunction() {
+            console.log("called")
+            var x = document.getElementById("navbarList");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        document.getElementById("Dep01").addEventListener("click", () => {
+            window.location = "./agricultureForms.html";
+        });
+
+    </script>
+</body>
+
+</html>
